@@ -43,7 +43,10 @@
   width: 45px;
 }
 @media only screen and (max-width: 768px) {
-  .text-header {
-    text-align: end;
-  }
+    .contenedorEnlacesNav{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
