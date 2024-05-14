@@ -13,17 +13,14 @@ const Seccion2 = () => {
                         <aside className="card-body">
                             <MdDeliveryDining className='iconoSeccion text-success' />
                             <h4>Envios Gratis</h4>
-                            <p>Hace tu pedido por wp y te lo llevamos a tu domicilio</p>
+                            <p>Hace tu pedido por whatsapp y te lo llevamos a tu domicilio</p>
                         </aside>
                     </article>
                     <article data-aos="fade-up" className=" cardSeccion col-11 col-md-5 col-lg-3 mx-3 card text-center  mx-1 shadow p-3 mb-4  rounded">
                         <aside className="card-body">
                             <FaCreditCard className='iconoSeccion p-1 text-primary' />
                             <h4>Medios de Pago</h4>
-                            <p className="m-0 p-0">Efectivo</p>
-                            <p className="m-0 p-0">Transferencia</p>
-                            <p className="m-0 p-0">Tarjeta de débito</p>
-                            <p className="m-0 p-0">Tarjeta de crédito</p>
+                            <p className="m-0 p-0">Recibimos todos los medios de pago</p>
                         </aside>
                     </article>
                     <article data-aos="fade-up" className=" cardSeccion col-11 col-md-5 col-lg-3  card text-center mx-1  shadow p-3 mb-4  rounded ">

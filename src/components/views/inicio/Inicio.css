@@ -42,18 +42,27 @@
 }
 .cardNombre {
   font-weight: bold;
+  margin-bottom: 4px;
+  text-align: center;
 }
 .cardPrecio {
   font-weight: 600;
   background-color: greenyellow;
-  display: inline-block;
   padding: 3px 10px;
   border-radius: 10px;
+  margin: 0 auto 4px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cardBotones {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+.btnCard{
+    width: 70%;
 }
 
 /* Media query para dispositivos con un ancho máximo de 992px (típicamente dispositivos medianos) */
@@ -81,6 +90,9 @@
   }
   /* PRODUCTOS */
   .cardContenedor {
-   margin: 10px 0px ;
+    margin: 10px 0px;
+  }
+  .cardPrecio{
+    width: 80%;
   }
 }
