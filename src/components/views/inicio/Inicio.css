@@ -1,3 +1,15 @@
+/* FONDO INICIO */
+.fondoInicio{
+    background-image: linear-gradient(
+        rgba(120, 120, 115, 0.83),
+        rgba(249, 218, 153, 0.659)
+      ),
+      url("../../../assets/imagenes/fondoH4.jpg");
+    background-size:cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: bottom; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita la imagen */
+    background-attachment: fixed; /* Hace que la imagen de fondo se quede fija */
+}
 /* PORTADA */
 .contenedorPortada {
   display: flex;
@@ -12,11 +24,35 @@
   object-fit: fill;
   border: 1px solid rgba(0, 0, 0, 0.488);
   border-radius: 15px ;
+  opacity: 0.9;
 }
 
 /* SECCION */
+.cardSeccion{
+    opacity: 0.9!important;
+}
 .iconoSeccion{
     font-size: 35px;
+}
+/* PRODUCTOS */
+.cardContenedor{
+    border-radius: 10px;
+    margin: 10px;
+}
+.cardNombre{
+    font-weight: bold;
+}
+.cardPrecio{
+    font-weight: 600;
+    background-color: greenyellow;
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+.cardBotones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
   /* Media query para dispositivos con un ancho máximo de 992px (típicamente dispositivos medianos) */
