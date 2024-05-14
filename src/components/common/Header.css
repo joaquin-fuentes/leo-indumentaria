@@ -5,7 +5,6 @@
   background-color: #171717;
 }
 .header {
-  height: 60px;
   position: fixed!important;
   top: 0;
   left: 0;
@@ -14,11 +13,15 @@
   width: 100vw;
   transition: background-color 0.3s; /* transición suave */
 }
+.headerExpanded{
+  background-color: rgba(251, 231, 202, 0.875);
+
+}
 .header.scrolled {
   background-color: rgba(251, 231, 202, 0.875);
 }
 .homeBackground {
-  background-color: rgb(251, 231, 202);
+  background-color: rgb(251, 231, 202, 0.875);
 }
 .defaultBackground {
   background-color: rgba(17, 10, 10, 0.6);
