@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Swal from "sweetalert2";
 import logo from "../../assets/logos/logo1.png";
 import whatsapp from "../../assets/iconos/iconoWP.svg";
@@ -8,12 +8,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import "./Header.css"
 
-
 const Header = () => {
-
-    const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
-
+    const [isScrolled, setIsScrolled] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -60,6 +58,5 @@ const Header = () => {
         </Navbar>
     );
 };
-
 
 export default Header;
