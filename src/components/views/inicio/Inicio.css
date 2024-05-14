@@ -14,9 +14,14 @@
   border-radius: 15px ;
 }
 
+/* SECCION */
+.iconoSeccion{
+    font-size: 35px;
+}
 
   /* Media query para dispositivos con un ancho máximo de 992px (típicamente dispositivos medianos) */
   @media (max-width: 992px) {
+    /* PORTADA */
     .contenedorPortada{
         padding: 20px;
        }
@@ -28,6 +33,7 @@
   }
 /* Media query para dispositivos con un ancho máximo de 768px (típicamente dispositivos móviles) */
 @media (max-width: 768px) {
+    /* PORTADA */
    .contenedorPortada{
     padding: 20px;
    }
