@@ -31,7 +31,9 @@
 /* SECCION */
 .cardSeccion {
   opacity: 0.9 !important;
+  height: 200px!important;
 }
+
 .iconoSeccion {
   font-size: 35px;
 }
@@ -39,12 +41,12 @@
 .cardContenedor {
   border-radius: 10px;
   margin: 8px;
-  transition: transform 0.3s ease!important; /* Agrega una transición suave a la transformación */
+  transition: transform 0.3s ease !important; /* Agrega una transición suave a la transformación */
 }
 .cardContenedor:hover {
   transform: scale(
     1.05
-  )!important; /* Hace que la imagen se agrande al 110% al pasar el mouse por encima */
+  ) !important; /* Hace que la imagen se agrande al 110% al pasar el mouse por encima */
 }
 .cardNombre {
   font-weight: bold;

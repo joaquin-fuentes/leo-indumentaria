@@ -27,7 +27,7 @@ const Seccion2 = () => {
                         <aside className="card-body">
                             <BiSolidOffer className='iconoSeccion text-danger' />
                             <h4>Descuentos</h4>
-                            <p>Con la compra de 3 o mas productos contas con descuentos</p>
+                            <p>Contas con descuentos comprando 3 o mas productos</p>
                         </aside>
                     </article>
                 </div>
