@@ -39,6 +39,12 @@
 .cardContenedor {
   border-radius: 10px;
   margin: 8px;
+  transition: transform 0.3s ease!important; /* Agrega una transición suave a la transformación */
+}
+.cardContenedor:hover {
+  transform: scale(
+    1.05
+  )!important; /* Hace que la imagen se agrande al 110% al pasar el mouse por encima */
 }
 .cardNombre {
   font-weight: bold;
@@ -61,8 +67,8 @@
   justify-content: space-between;
   align-items: center;
 }
-.btnCard{
-    width: 70%;
+.btnCard {
+  width: 70%;
 }
 
 /* Media query para dispositivos con un ancho máximo de 992px (típicamente dispositivos medianos) */
@@ -92,7 +98,7 @@
   .cardContenedor {
     margin: 10px 0px;
   }
-  .cardPrecio{
+  .cardPrecio {
     width: 80%;
   }
 }
