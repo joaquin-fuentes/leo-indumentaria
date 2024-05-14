@@ -15,7 +15,7 @@
   transition: background-color 0.3s; /* transición suave */
 }
 .header.scrolled {
-  background-color: rgba(223, 182, 119, 0.882);
+  background-color: rgba(251, 231, 202, 0.875);
 }
 .homeBackground {
   background-color: rgb(251, 231, 202);
