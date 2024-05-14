@@ -1,0 +1,39 @@
+/* PORTADA */
+.contenedorPortada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.imgCarousel {
+  width: 90vw;
+  height: 300px;
+  object-fit: fill;
+  border: 1px solid rgba(0, 0, 0, 0.488);
+  border-radius: 15px ;
+}
+
+
+  /* Media query para dispositivos con un ancho máximo de 992px (típicamente dispositivos medianos) */
+  @media (max-width: 992px) {
+    .contenedorPortada{
+        padding: 20px;
+       }
+       .imgCarousel{
+        width: 90vw;
+        height: 300px;
+        border-radius: 10px;
+       }
+  }
+/* Media query para dispositivos con un ancho máximo de 768px (típicamente dispositivos móviles) */
+@media (max-width: 768px) {
+   .contenedorPortada{
+    padding: 20px;
+   }
+   .imgCarousel{
+    width: 90vw;
+    height: 210px;
+    border-radius: 10px;
+   }
+  }
