@@ -30,12 +30,29 @@
 
 /* SECCION */
 .cardSeccion {
-  opacity: 0.9 !important;
-  height: 200px!important;
+  opacity: 0.9!important;
+  border-radius:100px!important;
+  background-color: rgba(241, 239, 236, 0.756);
+  height: 120px;
+  width: 300px!important;
+  padding: 15px!important;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .iconoSeccion {
   font-size: 35px;
+}
+.textSeccion{
+  color: black;
+  text-shadow: 1px 1px 1px white;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0;
 }
 /* PRODUCTOS */
 .cardContenedor {
@@ -84,6 +101,11 @@
     height: 300px;
     border-radius: 10px;
   }
+  /* SECCION */
+.cardSeccion {
+  height: 120px;
+  width: 120px!important;
+}
 }
 /* Media query para dispositivos con un ancho máximo de 768px (típicamente dispositivos móviles) */
 @media (max-width: 768px) {
