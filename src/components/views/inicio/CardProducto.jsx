@@ -9,11 +9,11 @@ const CardProducto = ({ producto }) => {
     return (
         <Col xs={6} md={4} lg={3}>
             <Card data-aos="fade-up" className='cardContenedor'>
-                <Card.Img className='cardImagen' variant="top" src="https://res.cloudinary.com/dep95zom7/image/upload/v1715693129/LeoIndumentaria/Camisa_de_dibujos_animados___Vector_Premium_k0bivz.jpg" />
-                <Card.Body>
-                    <Card.Title className='cardNombre'>Nombre</Card.Title>
+                <Card.Img className='cardImagen' variant="top" src={producto.imagen} />
+                <Card.Body className="cardContenedorInfo">
+                    <Card.Title className='cardNombre'>{producto.nombrePrenda}</Card.Title>
                     <Card.Text className='cardPrecio'>
-                        $ Precio
+                        $ {producto.precio}
                     </Card.Text>
                     <div className='cardBotones'>
                         <Button className='btnCard' variant="primary">Detalle</Button>

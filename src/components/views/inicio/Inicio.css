@@ -65,6 +65,14 @@
     1.05
   ) !important; /* Hace que la imagen se agrande al 110% al pasar el mouse por encima */
 }
+.cardImagen{
+  height: 300px;
+  object-fit:contain;
+  background-color: white;
+}
+.cardContenedorInfo{
+  height: 150px;
+}
 .cardNombre {
   font-weight: bold;
   margin-bottom: 4px;

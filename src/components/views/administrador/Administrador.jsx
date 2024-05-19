@@ -5,6 +5,7 @@ import Swal from "sweetalert2"
 import { useEffect, useState } from 'react';
 import { FaSearch } from "react-icons/fa"
 import ItemProducto from "./ItemProducto";
+import CrearProducto from "./CrearProducto";
 
 
 const Administrador = () => {
@@ -67,6 +68,8 @@ const Administrador = () => {
                         Panel de administrador
                     </h2>
                     <hr data-aos="fade-up" className="m-0 text-light mb-4" />
+                    <CrearProducto setProductos={setProductos}></CrearProducto>
+                    <hr />
                     <Button variant={categoriaSeleccionada === "Hombre" ? "primary" : "outline-primary"}
                         className="mb-3 me-3" onClick={() => categoriaHombre()}>Hombre</Button>
                     <Button variant={categoriaSeleccionada === "Mujer" ? "danger" : "outline-danger"}
@@ -98,12 +101,12 @@ const Administrador = () => {
                         <thead>
                             <tr>
                                 {/* <th>#</th> */}
-                                <th className="">Prenda</th>
-                                <th className="">Imagen</th>
-                                <th className="">Talle</th>
-                                <th className="">Categoria</th>
-                                <th className="">Descuento</th>
-                                <th className="">Precio</th>
+                                <th className="text-center">Prenda</th>
+                                <th className="text-center">Imagen</th>
+                                <th className="text-center">Talle</th>
+                                <th className="text-center">Categoria</th>
+                                <th className="text-center">Descuento</th>
+                                <th className="text-center">Precio</th>
                                 <th>Opciones</th>
                             </tr>
                         </thead>

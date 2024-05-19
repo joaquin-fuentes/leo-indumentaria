@@ -51,14 +51,14 @@ const ItemProducto = ({ producto, setProductos }) => {
     return (
         <tr >
             {/* <td className="col-id"></td> */}
-            <td className="">{producto.nombrePrenda}</td>
-            <td className=""><img src={producto.imagen} alt="imagen de producto" className="imgPrendaTabla" /></td>
-            <td className="">
+            <td className="text-center">{producto.nombrePrenda}</td>
+            <td className="text-center"><img src={producto.imagen} alt="imagen de producto" className="imgPrendaTabla" /></td>
+            <td className="text-center">
                 {producto.talle}
             </td>
-            <td className="">{producto.categoria}</td>
-            <td className="">{producto.descuento}</td>
-            <td className="">{producto.precio + producto.descuento}</td>
+            <td className="text-center">{producto.categoria}</td>
+            <td className="text-center">{producto.descuento}</td>
+            <td className="text-center">{producto.precio + producto.descuento}</td>
             <td className="d-flex justify-content-center">
                 <Button variant="danger" onClick={borrarProducto} className=" m-1 d-flex justify-content-center align-items-center flex-column"><FaTrashAlt />
                 </Button>
