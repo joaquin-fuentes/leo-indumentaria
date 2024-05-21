@@ -8,6 +8,8 @@ import Login from './components/views/administrador/Login'
 import RutasAdministrador from './components/routes/RutasAdministrador'
 import RutasProtegidas from './components/routes/RutasProtegidas'
 import Error404 from './components/views/Error404'
+import DetalleProducto from './components/views/inicio/DetalleProducto'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
 
@@ -17,10 +19,12 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop></ScrollToTop>
         <Header></Header>
         <div className='main'>
           <Routes>
             <Route exact path="/" element={<Inicio />} />
+            <Route exact path="/detalle/:id" element={<DetalleProducto />} />
             <Route exact path="/login" element={<Login setUsuarioLogueado={setUsuarioLogueado} />} />
             <Route path="/administrador/*" element={<RutasProtegidas><RutasAdministrador /></RutasProtegidas>} />
             <Route path="*" element={<Error404 />} />

@@ -16,8 +16,8 @@ const CardProducto = ({ producto }) => {
                     <p className="cardNombre">{producto.nombrePrenda}</p>
                     <p className="cardPrecio">${producto.precio}</p>
                     <div className="contenedorBotones">
-                        <a href="#" className="btnCard">Ver detalle</a>
-                        <img src={whatsapp} alt="icono de whatsapp" className="iconoCard" />
+                        <NavLink end to={`/detalle/${producto._id}`}  className="btnCard">Ver detalle</NavLink>
+                        <Link  target="_blank"  to={`https://api.whatsapp.com/send?phone=3816097754&text=¡Hola! te queria consultar sobre ${producto.nombrePrenda}`}><img src={whatsapp} alt="icono de whatsapp" className="iconoCard" /></Link>
                     </div>
 
                 </div>

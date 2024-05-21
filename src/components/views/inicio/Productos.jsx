@@ -56,7 +56,7 @@ const Productos = () => {
     }
 
     return (
-        <Container>
+        <Container id="productos">
             <h2 data-aos="fade-up">Productos</h2>
             <hr data-aos="fade-up" />
             <Button variant={categoriaSeleccionada === "Hombre" ? "primary" : "outline-primary"}
