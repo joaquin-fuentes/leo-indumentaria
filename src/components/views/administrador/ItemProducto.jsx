@@ -4,6 +4,7 @@ import { useState } from "react"
 import { consultaBorrarProducto, obtenerProductos } from "../../helpers/prendas"
 import { FaTrashAlt } from "react-icons/fa";
 import DetalleProducto from "./DetalleProducto"
+import EditarProducto from "./EditarProducto";
 
 const ItemProducto = ({ producto, setProductos }) => {
 
@@ -60,9 +61,10 @@ const ItemProducto = ({ producto, setProductos }) => {
             <td className="text-center">{producto.descuento}</td>
             <td className="text-center">{producto.precio + producto.descuento}</td>
             <td className="d-flex justify-content-center">
+                <EditarProducto producto={producto} setProductos={setProductos}></EditarProducto>
+                <DetalleProducto producto={producto} borrarProducto={borrarProducto}></DetalleProducto>
                 <Button variant="danger" onClick={borrarProducto} className=" m-1 d-flex justify-content-center align-items-center flex-column"><FaTrashAlt />
                 </Button>
-                <DetalleProducto producto={producto} borrarProducto={borrarProducto}></DetalleProducto>
                
             </td>
         </tr>

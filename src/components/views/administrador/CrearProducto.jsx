@@ -343,17 +343,3 @@ const CrearProducto = ({ setProductos }) => {
 
 export default CrearProducto;
 
-
-
-{/* <p className="fw-bold">Prenda: <span className="fw-normal">{ }</span></p>
-<p className="fw-bold">Imagen: <span className="fw-normal">{ }</span></p>
-<p className="fw-bold">Talle: <span className="textMensajeModal fw-normal">{ }</span></p>
-<p className="fw-bold">Categoria: <span className="fw-normal">{ }</span></p>
-<p className="fw-bold">Descuento: <span className="fw-normal">{ }</span></p>
-<p className="fw-bold">Precio: <span className="fw-normal">{ }</span></p>
-<p className="fw-bold">Estado: <span className="fw-normal">{ }</span></p>
-<p className="fw-bold">Estilo: <span className="fw-normal">{ }</span></p>
-<p className="fw-bold">Destacado: <span className="fw-normal">{ }</span></p>
-<p className="fw-bold">Precio x mayor: <span className="fw-normal">{ }</span></p>
-<p className="fw-bold">Color: <span className="fw-normal">{ }</span></p>
-<p className="fw-bold">Descripcion: <span className="fw-normal">{ }</span></p> */}
