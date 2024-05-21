@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import logo from "../../assets/logos/logo1.png";
+import logo from "../../assets/logos/logolj.png";
 import whatsapp from "../../assets/iconos/iconoWP.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
@@ -75,8 +75,8 @@ const Header = ({ usuarioLogueado, setUsuarioLogueado }) => {
                     <Nav className="contenedorEnlacesNav ms-auto">
                         <Nav.Link className="text-header text-right text-md-left" href="/#inicio">Inicio</Nav.Link>
                         <Nav.Link className="text-header" href="/#productos">Productos</Nav.Link>
-                        <Nav.Link className="text-header" href="/#nosotros">Sobre Nosotros</Nav.Link>
-                        <Nav.Link className="text-header" href="/#contacto">Contacto</Nav.Link>
+                        {/* <Nav.Link className="text-header" href="/#nosotros">Sobre Nosotros</Nav.Link>
+                        <Nav.Link className="text-header" href="/#contacto">Contacto</Nav.Link> */}
                         {
                             usuarioLogueado.rol === "administrador" ?
                                 <>
@@ -86,7 +86,7 @@ const Header = ({ usuarioLogueado, setUsuarioLogueado }) => {
                                 :
                                 <></>
                         }
-                        <Nav.Link className="text-header" href="/#contacto"><img src={whatsapp} alt="icono de whatsapp" className='iconoHeader' /></Nav.Link>
+                        <Nav.Link target="_blank" href={`https://api.whatsapp.com/send?phone=3816097754&text=¡Hola! te queria haer una consulta sobre tu tienda de indumentaria`} className="text-header" ><img src={whatsapp} alt="icono de whatsapp" className='iconoHeader' /></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

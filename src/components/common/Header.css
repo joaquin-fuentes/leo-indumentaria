@@ -27,8 +27,7 @@
   background-color: rgb(251, 231, 202);
 }
 .logoMenu {
-  width: 100px;
-  filter: drop-shadow(1px 1px #0c0c0ca7);
+  width: 70px;
 }
 .contenedorEnlacesNav {
   display: flex;
