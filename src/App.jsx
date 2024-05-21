@@ -20,7 +20,7 @@ function App() {
     <>
       <BrowserRouter>
         <ScrollToTop></ScrollToTop>
-        <Header></Header>
+        <Header  usuarioLogueado={usuarioLogueado} setUsuarioLogueado={setUsuarioLogueado}></Header>
         <div className='main'>
           <Routes>
             <Route exact path="/" element={<Inicio />} />

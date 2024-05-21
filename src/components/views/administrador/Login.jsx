@@ -40,7 +40,7 @@ const Login = ({ setUsuarioLogueado }) => {
     };
 
     return (
-        <div className='bg-dark'>
+        <div className='fondoLogin'>
             <Container>
                 <Form onSubmit={handleSubmit(onSubmit)}
                     data-aos="fade-up"
