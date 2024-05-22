@@ -6,6 +6,9 @@ import logo from "../../assets/logos/logolj.png";
 import whatsapp from "../../assets/iconos/iconoWP.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+import { IoShirt } from "react-icons/io5";
+import { IoIosHome } from "react-icons/io";
+
 import "./Header.css"
 
 const Header = ({ usuarioLogueado, setUsuarioLogueado }) => {
@@ -73,8 +76,10 @@ const Header = ({ usuarioLogueado, setUsuarioLogueado }) => {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="contenedorEnlacesNav ms-auto">
-                        <Nav.Link className="text-header text-right text-md-left" href="/#inicio">Inicio</Nav.Link>
-                        <Nav.Link className="text-header" href="/#productos">Productos</Nav.Link>
+                        <Nav.Link className="text-header text-right text-md-left" href="/#inicio"><IoIosHome className='mb-1' />
+                            Inicio</Nav.Link>
+                        <Nav.Link className="text-header" href="/#productos"><IoShirt className='mb-1'/>
+                            Productos</Nav.Link>
                         {/* <Nav.Link className="text-header" href="/#nosotros">Sobre Nosotros</Nav.Link>
                         <Nav.Link className="text-header" href="/#contacto">Contacto</Nav.Link> */}
                         {
