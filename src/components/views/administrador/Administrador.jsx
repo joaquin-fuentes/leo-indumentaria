@@ -105,6 +105,7 @@ const Administrador = () => {
                                 <th className="text-center">Imagen</th>
                                 <th className="text-center">Talle</th>
                                 <th className="text-center">Categoria</th>
+                                <th className="text-center">Destacado</th>
                                 <th className="text-center">Descuento</th>
                                 <th className="text-center">Precio</th>
                                 <th>Opciones</th>

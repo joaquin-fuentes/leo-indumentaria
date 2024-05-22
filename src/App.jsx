@@ -11,6 +11,9 @@ import Error404 from './components/views/Error404'
 import DetalleProducto from './components/views/inicio/DetalleProducto'
 import ScrollToTop from './components/ScrollToTop'
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 function App() {
 
   const usuarioDelSessionStorage = JSON.parse(sessionStorage.getItem("usuarioLogueado")) || {};
@@ -20,7 +23,7 @@ function App() {
     <>
       <BrowserRouter>
         <ScrollToTop></ScrollToTop>
-        <Header  usuarioLogueado={usuarioLogueado} setUsuarioLogueado={setUsuarioLogueado}></Header>
+        <Header usuarioLogueado={usuarioLogueado} setUsuarioLogueado={setUsuarioLogueado}></Header>
         <div className='main'>
           <Routes>
             <Route exact path="/" element={<Inicio />} />
