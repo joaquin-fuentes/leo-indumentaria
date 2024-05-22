@@ -11,20 +11,17 @@
   background-attachment: fixed; /* Hace que la imagen de fondo se quede fija */
 }
 /* PORTADA */
-.contenedorImagenPortada {
-  width: 100%;
-}
+
 .contenedorPortada {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 60px;
-  width: 100%;
   padding: 10px 0 !important;
 }
 
 .imgCarousel {
-  width: 100%;
+  width: 91vw;
   height: 300px;
   object-fit: fill;
   opacity: 0.9;
