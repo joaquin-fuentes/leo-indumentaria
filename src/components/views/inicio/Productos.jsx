@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Button, InputGroup, Form, Row, Spinner, Card } from "react-bootstrap"
+import { Container, Button, InputGroup, Form, Row, Spinner, Card, Dropdown } from "react-bootstrap"
 import { NavLink, Link } from "react-router-dom"
 import { FaSearch } from "react-icons/fa";
 import { obtenerProductos } from '../../helpers/prendas';
@@ -34,21 +34,21 @@ const Productos = () => {
         return nombrePrendaMatches && categoriaMatches;
     });
 
-    const categoriaHombre = () => {
-        console.log("selecciono Hombre")
-        setCategoriaSeleccionada("Hombre");
+    const categoriaAdulto = () => {
+        console.log("selecciono Adulto")
+        setCategoriaSeleccionada("Adulto");
     }
-    const categoriaMujer = () => {
-        console.log("selecciono Mujer")
-        setCategoriaSeleccionada("Mujer");
+    const categoriaJuvenil = () => {
+        console.log("selecciono Juvenil")
+        setCategoriaSeleccionada("Juvenil");
     }
-    const categoriaNiños = () => {
-        console.log("selecciono Niños")
-        setCategoriaSeleccionada("Niños");
+    const categoriaNiño = () => {
+        console.log("selecciono Niño")
+        setCategoriaSeleccionada("Niño");
     }
-    const categoriaAccesorios = () => {
-        console.log("selecciono Accesorios")
-        setCategoriaSeleccionada("Accesorios");
+    const categoriaBebe = () => {
+        console.log("selecciono Bebe")
+        setCategoriaSeleccionada("Bebe");
     }
     const categoriaTodos = () => {
         console.log("selecciono Todos")
@@ -59,16 +59,18 @@ const Productos = () => {
         <div id="productos">
             <h2 data-aos="fade-up">Productos</h2>
             <hr data-aos="fade-up" />
-            <Button variant={categoriaSeleccionada === "Hombre" ? "primary" : "outline-primary"}
-                className="mb-3 me-3" onClick={() => categoriaHombre()}>Hombre</Button>
-            <Button variant={categoriaSeleccionada === "Mujer" ? "danger" : "outline-danger"}
-                className="mb-3 me-3" onClick={() => categoriaMujer()}>Mujer</Button>
-            <Button variant={categoriaSeleccionada === "Niños" ? "info" : "outline-info"}
-                className="mb-3 me-3" onClick={() => categoriaNiños()}>Niños</Button>
-            <Button variant={categoriaSeleccionada === "Accesorios" ? "warning" : "outline-warning"}
-                className="mb-3 me-3" onClick={() => categoriaAccesorios()}>Accesorios</Button>
-            <Button variant={categoriaSeleccionada === "" ? "success" : "outline-success"}
-                className="mb-3 me-3" onClick={() => categoriaTodos()}>Todos</Button>
+            <Dropdown className="mb-3">
+                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                    Categoria
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                    <Dropdown.Item variant={categoriaSeleccionada === "Adulto" ? "primary" : "outline-primary"} onClick={() => categoriaAdulto()}>Adulto</Dropdown.Item>
+                    <Dropdown.Item onClick={() => categoriaJuvenil()}>Juvenil</Dropdown.Item>
+                    <Dropdown.Item onClick={() => categoriaNiño()}>Niño</Dropdown.Item>
+                    <Dropdown.Item onClick={() => categoriaBebe()}>Bebé</Dropdown.Item>
+                    <Dropdown.Item onClick={() => categoriaTodos()}>Todos</Dropdown.Item>
+                </Dropdown.Menu>
+            </Dropdown>
             <InputGroup className="mb-3">
                 <InputGroup.Text id="basic-addon1"><FaSearch /></InputGroup.Text>
                 <Form.Control

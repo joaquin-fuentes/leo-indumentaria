@@ -12,7 +12,7 @@ const CardDestacado = ({ producto }) => {
                 <div className="contenedorImagen">
                     <img src={producto.imagen} alt="imagen del producto" className="cardImagen" />
                 </div>
-                <div className="contenedorInfo">
+                <div className="contenedorInfo p-1">
                     <p className="cardNombre">{producto.nombrePrenda}</p>
                     <p className="cardPrecio">${producto.precio}</p>
                     <div className="contenedorBotones">
