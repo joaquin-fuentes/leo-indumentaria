@@ -12,6 +12,7 @@
   z-index: 100;
   width: 100vw;
   transition: background-color 0.3s; /* transición suave */
+  padding: 0!important;
 }
 .headerExpanded{
   background-color: rgba(251, 231, 202, 0.875);
@@ -49,7 +50,7 @@
 /* Media query para dispositivos con un ancho máximo de 992px (típicamente dispositivos medianos) */
 @media (max-width: 992px) {
   .header{
-    padding: 20px 0!important;
+    padding: 10px 0!important;
   }
   .contenedorEnlacesNav {
     align-items: end;
