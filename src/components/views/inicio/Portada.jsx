@@ -5,11 +5,11 @@ import CarouselPortada from "./CarouselPortada"
 
 const Portada = () => {
     return (
-        <Container fluid className='contenedorPortada'>
+        <div  className='contenedorPortada'>
             <div className='contenedorImagenPortada'>
-                <CarouselPortada></CarouselPortada>
+                <CarouselPortada data-aos="fade-up"></CarouselPortada>
             </div>
-        </Container>
+        </div>
     );
 };
 

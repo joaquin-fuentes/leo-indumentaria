@@ -56,7 +56,7 @@ const Productos = () => {
     }
 
     return (
-        <Container id="productos">
+        <div id="productos">
             <h2 data-aos="fade-up">Productos</h2>
             <hr data-aos="fade-up" />
             <Button variant={categoriaSeleccionada === "Hombre" ? "primary" : "outline-primary"}
@@ -89,7 +89,7 @@ const Productos = () => {
                     </Row>
                 )}
 
-        </Container>
+        </div>
     );
 };
 
