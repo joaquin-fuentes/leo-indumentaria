@@ -8,7 +8,7 @@ import { FaRegSurprise } from "react-icons/fa";
 const Seccion2 = () => {
     return (
         <div data-aos="fade-up" className='bg-dark my-3 p-1 contenedorSeccion'>
-            <div className='d-flex justify-content-evenly align-items-center'>
+            <div data-aos="fade-up" className='d-flex justify-content-evenly align-items-center'>
                 <div className='text-light d-flex contenedorArticleSeccion'>
                     <FaCreditCard className='text-warning me-2 fs-3' />
                     <span>
