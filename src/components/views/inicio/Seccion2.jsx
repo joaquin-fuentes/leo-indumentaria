@@ -7,21 +7,27 @@ import { FaRegSurprise } from "react-icons/fa";
 
 const Seccion2 = () => {
     return (
-        <div data-aos="fade-up" className='bg-dark my-3 p-1'>
+        <div data-aos="fade-up" className='bg-dark my-3 p-1 contenedorSeccion'>
             <div className='d-flex justify-content-evenly align-items-center'>
-                <div className='text-light d-flex'>
-                    <FaCreditCard className='text-warning me-2 fs-3'/>
-                    Medios de pago
+                <div className='text-light d-flex contenedorArticleSeccion'>
+                    <FaCreditCard className='text-warning me-2 fs-3' />
+                    <span>
+                        Medios de pago
+                    </span>
                 </div>
                 <div className='text-warning fs-1 m-0 p-0'>/</div>
-                <div className='text-light d-flex'>
-                    <MdDeliveryDining className='text-warning me-2 fs-3'/>
-                    Envios gratis
+                <div className='text-light d-flex contenedorArticleSeccion'>
+                    <MdDeliveryDining className='text-warning me-2 fs-3' />
+                    <span>
+                        Envios gratis
+                    </span>
                 </div>
                 <div className='text-warning fs-1 m-0 p-0'>/</div>
-                <div className='text-light d-flex'>
-                    <FaRegSurprise className='text-warning me-2 fs-3'/>
-                    Sorteos
+                <div className='text-light d-flex contenedorArticleSeccion'>
+                    <FaRegSurprise className='text-warning me-2 fs-3' />
+                    <span>
+                        Sorteos
+                    </span>
                 </div>
             </div>
         </div>

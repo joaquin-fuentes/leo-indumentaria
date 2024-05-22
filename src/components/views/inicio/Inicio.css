@@ -132,6 +132,14 @@
     height: 210px;
     border-radius: 10px;
   }
+  /* SECCION */
+  .contenedorSeccion {
+    font-size: 10px;
+  }
+  .contenedorArticleSeccion{
+    display: f;
+    align-items: center;
+  }
   /* PRODUCTOS */
   .cardContenedor {
     margin: 10px 0px;
