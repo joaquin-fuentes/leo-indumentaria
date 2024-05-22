@@ -119,7 +119,7 @@ const Productos = () => {
         <div id="productos">
             <h2 data-aos="fade-up">Productos</h2>
             <hr data-aos="fade-up" />
-            <div data-aos="fade-up" className="d-flex">
+            <div data-aos="fade-up" className="d-flex flex-wrap">
                 <Dropdown className="mb-3 me-2">
                     <Dropdown.Toggle variant="secondary" id="dropdown-basic">
                         Estado

@@ -106,6 +106,10 @@ position: relative;
   text-align: center;
   font-weight: 550;
   font-size: 0.7rem;
+  white-space: nowrap; /* Evita que el texto haga wrap */
+  overflow: hidden;    /* Oculta el texto que se sale del contenedor */
+  text-overflow: ellipsis; /* Muestra los puntos suspensivos si el texto es demasiado largo */
+  max-width: calc(0.7rem * 12); /* Ajusta el ancho máximo según el tamaño de la fuente y el número de caracteres */
 }
 .cardPrecio {
   margin: 2px;
