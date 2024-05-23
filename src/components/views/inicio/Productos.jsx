@@ -67,9 +67,9 @@ const Productos = () => {
         console.log("selecciono Adulto")
         setCategoriaSeleccionada("Adulto");
     }
-    const categoriaJuvenil = () => {
-        console.log("selecciono Juvenil")
-        setCategoriaSeleccionada("Juvenil");
+    const categoriaAccesorio = () => {
+        console.log("selecciono Accesorio")
+        setCategoriaSeleccionada("Accesorio");
     }
     const categoriaNiño = () => {
         console.log("selecciono Niño")
@@ -140,11 +140,11 @@ const Productos = () => {
                     <Dropdown.Menu>
                         <Dropdown.Item onClick={() => categoriaAdulto()} className="d-flex align-items-center">Adulto {categoriaSeleccionada === "Adulto" ? <FaCheck className="ms-auto" />
                             : <></>}</Dropdown.Item>
-                        <Dropdown.Item onClick={() => categoriaJuvenil()} className="d-flex align-items-center">Juvenil {categoriaSeleccionada === "Juvenil" ? <FaCheck className="ms-auto" />
-                            : <></>}</Dropdown.Item>
                         <Dropdown.Item onClick={() => categoriaNiño()} className="d-flex align-items-center">Niño {categoriaSeleccionada === "Niño" ? <FaCheck className="ms-auto" />
                             : <></>}</Dropdown.Item>
                         <Dropdown.Item onClick={() => categoriaBebe()} className="d-flex align-items-center">Bebe {categoriaSeleccionada === "Bebe" ? <FaCheck className="ms-auto" />
+                            : <></>}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => categoriaAccesorio()} className="d-flex align-items-center">Accesorio {categoriaSeleccionada === "Accesorio" ? <FaCheck className="ms-auto" />
                             : <></>}</Dropdown.Item>
                         <Dropdown.Item onClick={() => categoriaTodos()} className="d-flex align-items-center">Todos {categoriaSeleccionada === "" ? <FaCheck className="ms-auto" />
                             : <></>}</Dropdown.Item>

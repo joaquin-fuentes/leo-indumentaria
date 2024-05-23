@@ -128,8 +128,8 @@ const EditarProducto = ({ producto, setProductos }) => {
                                 ...register('descuento', {
                                     // required: 'El campo es obligatorio',
                                     pattern: {
-                                        value: /^(?:[1-9]\d{0,4}|500000)$/,
-                                        message: "Debe ingresar un numero entre 1 y 500000"
+                                        value: /^(?:[0-9]\d{0,4}|500000)$/,
+                                        message: "Debe ingresar un numero entre 0 y 500000"
                                     }
                                 })
                             } />
@@ -164,9 +164,9 @@ const EditarProducto = ({ producto, setProductos }) => {
                                 })}>
                                 <option value="">Seleccione una opcion</option>
                                 <option value="Adulto">Adulto</option>
-                                <option value="Juvenil">Juvenil</option>
                                 <option value="Niño">Niño</option>
                                 <option value="Bebé">Bebé</option>
+                                <option value="Accesorios">Accesorios</option>
                                 <option value="Todos">Todos</option>
                             </Form.Select>
                             <Form.Text className="text-danger">
@@ -211,12 +211,13 @@ const EditarProducto = ({ producto, setProductos }) => {
                                 <option value="">Seleccione una opcion</option>
                                 <option value="Deportiva">Deportiva</option>
                                 <option value="Formal">Formal</option>
+                                <option value="Otro">Otro</option>
                             </Form.Select>
                             <Form.Text className="text-danger">
                                 {errors.estilo?.message}
                             </Form.Text>
                         </Form.Group>
-                        <Form.Group className="mb-3">
+                        {/* <Form.Group className="mb-3">
                             <Form.Label>Tipo</Form.Label>
                             <Form.Select aria-label="Default select example" {
                                 ...register('tipo', {
@@ -229,7 +230,7 @@ const EditarProducto = ({ producto, setProductos }) => {
                             <Form.Text className="text-danger">
                                 {errors.tipo?.message}
                             </Form.Text>
-                        </Form.Group>
+                        </Form.Group> */}
                         <Form.Group className="mb-3">
                             <Form.Label>Sexo</Form.Label>
                             <Form.Select aria-label="Default select example" {
@@ -258,7 +259,7 @@ const EditarProducto = ({ producto, setProductos }) => {
                         </Form.Group>
                         <Form.Group className="mb-3">
                             <Form.Label>Talle*</Form.Label>
-                            <Form.Control type="text" placeholder="Ej: L" maxLength={5} {
+                            <Form.Control type="text" placeholder="Ej: L" maxLength={10} {
                                 ...register('talle', {
                                     required: 'El campo es obligatorio',
                                     minLength: {
@@ -266,8 +267,8 @@ const EditarProducto = ({ producto, setProductos }) => {
                                         message: "Este campo debe tener como minimo 1 caracter"
                                     },
                                     maxLength: {
-                                        value: 5,
-                                        message: "Este campo debe tener como maximo 5 caracteres"
+                                        value: 10,
+                                        message: "Este campo debe tener como maximo 10 caracteres"
                                     }
                                 })
                             } />
@@ -301,12 +302,13 @@ const EditarProducto = ({ producto, setProductos }) => {
                         </Form.Group>
                         <Form.Group className="mb-3">
                             <Form.Label>Otro</Form.Label>
-                            <Form.Control type="text" placeholder="Ej: Remera" {
+                            <Form.Select aria-label="Default select example" {
                                 ...register('otro', {
-                                    // required: 'El campo es obligatorio',
-
-                                })
-                            } />
+                                    // required: 'Debe seleccionar un estilo',
+                                })}>
+                                <option value="">Seleccione una opcion</option>
+                                <option value="ofertadeldia">Oferta del día</option>
+                            </Form.Select>
                             <Form.Text className="text-danger">
                                 {errors.otro?.message}
                             </Form.Text>
