@@ -301,13 +301,14 @@ const EditarProducto = ({ producto, setProductos }) => {
 
                         </Form.Group>
                         <Form.Group className="mb-3">
-                            <Form.Label>Otro</Form.Label>
+                            <Form.Label>Producto del dia</Form.Label>
                             <Form.Select aria-label="Default select example" {
                                 ...register('otro', {
                                     // required: 'Debe seleccionar un estilo',
                                 })}>
                                 <option value="">Seleccione una opcion</option>
-                                <option value="ofertadeldia">Oferta del día</option>
+                                <option value="">NO</option>
+                                <option value="ofertadeldia">SI</option>
                             </Form.Select>
                             <Form.Text className="text-danger">
                                 {errors.otro?.message}

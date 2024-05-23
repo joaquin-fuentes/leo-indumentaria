@@ -41,6 +41,8 @@ const DetalleProducto = ({ producto, borrarProducto }) => {
                     <p className="fw-bold">Precio x mayor: <span className="fw-normal">{producto.precioxmayor}</span></p>
                     <p className="fw-bold">Color: <span className="fw-normal">{producto.color}</span></p>
                     <p className="fw-bold">Descripcion: <span className="fw-normal">{producto.descripcion}</span></p>
+                    <p className="fw-bold">Oferta del día: <span className="fw-normal">{producto.otro}</span></p>
+
 
                 </Modal.Body>
 
