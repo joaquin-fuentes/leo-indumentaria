@@ -1,3 +1,7 @@
+/* * {
+  outline: 1px solid red;
+} */
+
 /* FONDO INICIO */
 .fondoInicio {
   background-image: linear-gradient(
@@ -45,6 +49,10 @@
 .slick-track{
   display: flex!important;
   /* width: 50%!important; */
+}
+.slick-dots{
+  position: relative!important;
+  bottom: 0!important;
 }
 @media only screen and (max-width: 768px) {
   .slick-slide:nth-child(3) {
@@ -152,7 +160,7 @@ position: relative;
   background-attachment: fixed; /* Hace que la imagen de fondo se quede fija */
 }
 .contenedorDetalle {
-  padding-top: 97px;
+  padding-top: 87px;
 }
 .contenedorImgDetalle{
   position: relative;

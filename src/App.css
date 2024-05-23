@@ -1,4 +1,7 @@
 *{box-sizing: border-box;}
+body, html {
+  overflow-x: hidden;
+}
 #root {
   min-height: 100vh;
   display: flex;

@@ -31,7 +31,7 @@ const DetalleProducto = () => {
             <Container className='contenedorDetalle'>
                 <h2 data-aos="fade-up">Detalle del producto</h2>
                 <hr data-aos="fade-up" />
-                <Row className="p-4">
+                <Row className="p-2 pb-4">
                     <Col data-aos="fade-up" xs={12} lg={6} className="text-center " >
                         <div className="contenedorImgDetalle">
                             <img src={producto.imagen} alt="imagen del producto" className="imgDetalleProducto" />
