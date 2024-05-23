@@ -30,10 +30,14 @@ const DetalleProducto = () => {
         <div className="fondoDetalleProducto">
             <Container className='contenedorDetalle'>
                 <h2 data-aos="fade-up">Detalle del producto</h2>
-                <hr data-aos="fade-up"/>
+                <hr data-aos="fade-up" />
                 <Row className="p-4">
                     <Col data-aos="fade-up" xs={12} lg={6} className="text-center " >
-                        <img src={producto.imagen} alt="imagen de prenda" className="imgDetalleProducto" />
+                        <div className="contenedorImgDetalle">
+                            <img src={producto.imagen} alt="imagen del producto" className="imgDetalleProducto" />
+                            {producto.otro === "ofertadeldia" ? <span className="ofertaDelDia">Oferta del día</span> : <></>}
+                            {producto.descuento > 0 ? <span className="ofertaImg"> {producto.descuento}%OFF</span> : <></>}
+                        </div>
                     </Col>
                     <Col data-aos="fade-up" xs={12} lg={6} >
                         <article className="p-2 py-md-0">
@@ -42,9 +46,9 @@ const DetalleProducto = () => {
                             <p className="fw-bold ">Categoria: <span className="fw-normal">{producto.categoria}</span></p>
                             <p className="fw-bold ">Talle: <span className="fw-normal">{producto.talle}</span></p>
                             <p className="fw-bold ">Estado: <span className="fw-normal">{producto.estado}</span></p>
-                            {producto.descripcion === ""? <></> : <p className="fw-bold ">Descripcion: <span className="fw-normal">{producto.descripcion}</span></p> }
+                            {producto.descripcion === "" ? <></> : <p className="fw-bold ">Descripcion: <span className="fw-normal">{producto.descripcion}</span></p>}
                             <p className="fw-bold">Color: <span className="fw-normal p-1" style={{ backgroundColor: producto.color }}>{producto.color}</span></p>
-                            <p className="fw-bold">Precio: <span className="fw-normal">${producto.precio}</span></p>
+                            <p className="fw-bold">Precio: $<span className="fw-normal">{producto.otro === "ofertadeldia" ? producto.precio * (1 - (20 / 100)) : producto.precio * (1 - (producto.descuento / 100))}</span></p>
                             <Link className="btn btn-success"
                                 target="_blank"
                                 to={`https://api.whatsapp.com/send?phone=3816097754&text=¡Hola! quisiera hacer una consulta sobre ${producto.nombrePrenda}`}>

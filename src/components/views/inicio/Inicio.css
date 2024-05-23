@@ -154,6 +154,9 @@ position: relative;
 .contenedorDetalle {
   padding-top: 97px;
 }
+.contenedorImgDetalle{
+  position: relative;
+}
 .imgDetalleProducto {
   width: 100%;
   height: 450px;
