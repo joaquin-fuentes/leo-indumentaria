@@ -28,21 +28,22 @@ const DetalleProducto = ({ producto, borrarProducto }) => {
                     <Modal.Title>Detalle Producto</Modal.Title>
                 </Modal.Header>
 
-                <Modal.Body>
-                    <p className="fw-bold">Prenda: <span className="fw-normal">{producto.nombrePrenda}</span></p>
-                    <p className="fw-bold">Imagen: <span className="fw-normal">{producto.imagen}</span></p>
-                    <p className="fw-bold">Talle: <span className="textMensajeModal fw-normal">{producto.talle}</span></p>
-                    <p className="fw-bold">Categoria: <span className="fw-normal">{producto.categoria}</span></p>
-                    <p className="fw-bold">Descuento: <span className="fw-normal">{producto.descuento}</span></p>
-                    <p className="fw-bold">Precio: <span className="fw-normal">{producto.precio}</span></p>
-                    <p className="fw-bold">Estado: <span className="fw-normal">{producto.estado}</span></p>
-                    <p className="fw-bold">Estilo: <span className="fw-normal">{producto.estilo}</span></p>
-                    <p className="fw-bold">Destacado: <span className="fw-normal">{producto.destacado}</span></p>
-                    <p className="fw-bold">Precio x mayor: <span className="fw-normal">{producto.precioxmayor}</span></p>
-                    <p className="fw-bold">Color: <span className="fw-normal">{producto.color}</span></p>
-                    <p className="fw-bold">Descripcion: <span className="fw-normal">{producto.descripcion}</span></p>
-                    <p className="fw-bold">Oferta del día: <span className="fw-normal">{producto.otro}</span></p>
-
+                <Modal.Body className="">
+                    <div className="row">
+                        <p className="fw-bold col-xs-12  m-0 p-1 col-md-6">Prenda: <span className="fw-normal">{producto.nombrePrenda}</span></p>
+                        <p className="fw-bold col-xs-12  m-0 p-1 col-md-6">Imagen: <img src={producto.imagen} alt="imagen de producto" className="w-75 h-50" /> </p>
+                        <p className="fw-bold col-xs-12  m-0 p-1 col-md-6">Talle: <span className="textMensajeModal fw-normal">{producto.talle}</span></p>
+                        <p className="fw-bold col-xs-12  m-0 p-1 col-md-6">Categoria: <span className="fw-normal">{producto.categoria}</span></p>
+                        <p className="fw-bold col-xs-12  m-0 p-1 col-md-6">Descuento: <span className="fw-normal">{producto.descuento}</span></p>
+                        <p className="fw-bold col-xs-12  m-0 p-1 col-md-6">Precio: <span className="fw-normal">{producto.precio}</span></p>
+                        <p className="fw-bold col-xs-12  m-0 p-1 col-md-6">Estado: <span className="fw-normal">{producto.estado}</span></p>
+                        <p className="fw-bold col-xs-12  m-0 p-1 col-md-6">Estilo: <span className="fw-normal">{producto.estilo}</span></p>
+                        <p className="fw-bold col-xs-12  m-0 p-1 col-md-6">Destacado: <span className="fw-normal">{producto.destacado}</span></p>
+                        <p className="fw-bold col-xs-12  m-0 p-1 col-md-6">Precio x mayor: <span className="fw-normal">{producto.precioxmayor}</span></p>
+                        <p className="fw-bold col-xs-12  m-0 p-1 col-md-6">Color: <span className="fw-normal">{producto.color}</span></p>
+                        <p className="fw-bold col-xs-12  m-0 p-1 col-md-6">Descripcion: <span className="fw-normal">{producto.descripcion}</span></p>
+                        <p className="fw-bold col-xs-12  m-0 p-1 col-md-6">Oferta del día: <span className="fw-normal">{producto.otro}</span></p>
+                    </div>
 
                 </Modal.Body>
 
