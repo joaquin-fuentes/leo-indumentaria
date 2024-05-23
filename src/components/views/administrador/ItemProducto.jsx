@@ -58,6 +58,7 @@ const ItemProducto = ({ producto, setProductos }) => {
                 {producto.talle}
             </td>
             <td className="text-center">{producto.categoria}</td>
+            <td className="text-center">{producto.estilo}</td>
             <td className="text-center">{producto.destacado}</td>
             <td className="text-center">{producto.descuento}</td>
             <td className="text-center">{producto.precio + producto.descuento}</td>
