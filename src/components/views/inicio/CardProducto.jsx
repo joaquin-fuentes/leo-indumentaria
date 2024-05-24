@@ -21,7 +21,7 @@ const CardProducto = ({ producto }) => {
                     <p className="cardPrecio">${producto.otro === "ofertadeldia" ? producto.precio * (1 - (20 / 100)) : producto.precio * (1 - (producto.descuento / 100))}</p>
                     <div className="contenedorBotones">
                         <NavLink end to={`/detalle/${producto._id}`} className="btnCard">Ver detalle</NavLink>
-                        <Link target="_blank" to={`https://api.whatsapp.com/send?phone=3816097754&text=¡Hola! te queria consultar sobre ${producto.nombrePrenda}`}><img src={whatsapp} alt="icono de whatsapp" className="iconoCard" /></Link>
+                        <Link target="_blank" to={`https://api.whatsapp.com/send?phone=3816097754&text=¡Hola! te queria consultar sobre ${producto.nombrePrenda}`}><img src={whatsapp} alt="icono de whatsapp" className="ms-2 iconoCard" /></Link>
                     </div>
 
                 </div>

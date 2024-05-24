@@ -144,9 +144,13 @@ position: relative;
   text-decoration: none;
   margin-right: auto;
 }
+.btnCard:hover{
+  background-color: rgb(7, 7, 152);
+}
 .iconoCard {
   width: 40px;
 }
+
 /* DETALLE DE PRODUCTO */
 .fondoDetalleProducto {
   background-image: linear-gradient(
